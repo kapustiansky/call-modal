@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container {
+	@apply w-full max-w-7xl px-2.5 sm:px-10 md:px-1 m-auto;
+}
+
+.button {
+	@apply py-2.25 px-4.25 font-medium text-base leading-5 text-white rounded-md whitespace-nowrap hover:opacity-75 transition-opacity duration-300 active:opacity-100 shadow-default;
+}
+
+.input {
+	@apply py-2.25 px-3.5 border border-solid border-gray-300 rounded-md shadow-default font-normal text-gray-900 text-base leading-5 placeholder:text-gray-500;
+}
+
+.select-arrow {
+	background: url(../icons/arrow.svg) no-repeat right;
+	background-position-x: calc(100% - 9px);
+}
+
+.call-select {
+	@apply pr-8 text-ellipsis;
+}
